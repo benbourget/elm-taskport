@@ -133,7 +133,7 @@ export function install(settings, xhrProto) {
       }
     }
     // still have to invoke the original open() otherwise XHR behaves unpredictably
-    return this.__elm_taskport_open(method, url, async, user, password);
+    return this.__elm_taskport_open(method, url, true, user, password);
   };
 
   if (typeof ProgressEvent === 'function') {
